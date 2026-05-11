@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      width: 280px;
+      font-family: Arial, sans-serif;
+      padding: 12px;
+      background: #0f172a;
+      color: white;
+      margin: 0;
+    }
+    h3 {
+      margin: 0 0 8px 0;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #22c55e;
+      color: white;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #16a34a;
+    }
+    .small {
+      color: #cbd5e1;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+    #output {
+      color: #38bdf8;
+      font-weight: 500;
+    }
+  </style>
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <h3>Steam Sales Estimator</h3>
+  <div class="small">Open a Steam store page, then click the button.</div>
+  <button id="run">Estimate Current Page</button>
+  <div id="output" class="small"></div>
+</body>
+</html>

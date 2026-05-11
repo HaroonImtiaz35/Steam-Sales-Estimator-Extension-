@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Steam Sales Estimator",
+  "version": "1.0.0",
+  "description": "Estimates Steam sales and revenue directly on the client side.",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://store.steampowered.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Steam Sales Estimator"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://store.steampowered.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
